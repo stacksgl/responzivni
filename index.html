@@ -17,7 +17,7 @@
             justify-content: center;
         }
 
-        .container {
+        .page-container {
             width: 100%;
             max-width: 1200px;
             display: flex;
@@ -133,7 +133,7 @@
             margin: 0;
         }
 
-        .cards-s {
+        .cards-section {
             display: flex;
             justify-content: center;
             margin: 40px 0;
@@ -145,12 +145,6 @@
             gap: 20px;
             justify-content: center;
         }
-
-        @media (max-width: 800px) {
-            .top-bar-left, .sub-nav {
-                flex-direction: column;
-                align-items: flex-start;
-            }
 
         .card {
             background-color: #141416;
@@ -181,34 +175,34 @@
             margin: 0;
         }
 
-        .quote {
+        .quote-section {
             text-align: center;
             margin: 40px 0;
             color: #ccc;
         }
 
-        .quote p {
+        .quote-section p {
             margin: 5px 0;
         }
 
-        .quote p:first-child {
+        .quote-section p:first-child {
             font-style: italic;
             font-size: 1rem;
         }
 
-        .quote p:last-child {
+        .quote-section p:last-child {
             font-size: 0.9rem;
             color: #aaa;
         }
 
-        .footer {
+        footer {
             margin-top: 40px;
             padding: 40px 20px;
             background-color: #0e0e10;
             display: flex;
             flex-direction: column;
             gap: 20px;
-            }
+        }
 
         .footer-top {
             display: flex;
@@ -234,24 +228,30 @@
             color: #aaa;
             line-height: 1.6;
             font-size: 0.9rem;
-            }
+        }
 
         .footer-column p + p {
             margin-top: 5px;
-            }
+        }
 
-        .footer {
+        .footer-bottom {
             text-align: center;
             color: #aaa;
             font-size: 0.8rem;
         }
 
         @media (max-width: 1200px) {
-            .container {
+            .page-container {
                 max-width: 100%;
                 padding: 0 10px;
             }
         }
+
+        @media (max-width: 800px) {
+            .top-bar-left, .sub-nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
             .main-nav {
                 flex-wrap: wrap;
@@ -293,7 +293,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page-container">
         <header>
             <div class="top-bar">
                 <div class="top-bar-left">
@@ -329,7 +329,7 @@
             <p>:3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 </p>
         </section>
 
-        <section class="cards-s">
+        <section class="cards-section">
             <div class="cards">
                 <div class="card">
                     <i class="fas fa-robot"></i>
@@ -354,7 +354,7 @@
             </div>
         </section>
 
-        <section class="quote">
+        <section class="quote-section">
             <p>„Všechno je data. Nezáleží na tom, co je skutečné.“</p>
             <p>– CyberProphet</p>
         </section>
@@ -374,7 +374,7 @@
                     <p>Podpora<br>Technologie<br>Hackerská akademie</p>
                 </div>
             </div>
-            <div class="footer">
+            <div class="footer-bottom">
                 <p>3020 © CyberCorp</p>
             </div>
         </footer>
